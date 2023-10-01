@@ -41,6 +41,13 @@ cut -d' ' -f1 .tool-versions | xargs -I{} sh -c 'asdf plugin add "$1"' -- {} && 
 
 - Run task from the root of the repository to see available commands. We use task in place of make for this project. See [Taskfile.yml](Taskfile.yml) for more information.
 
+### Variables
+
+- SEMANTIC_RELEASE_TOKEN
+- SCALEWAY_REGISTRY_USER
+- SCALEWAY_REGISTRY_PASSWORD
+- COMPOSER_AUTH
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ➤ Templates <a name="#-templates"></a>
