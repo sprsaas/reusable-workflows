@@ -120,9 +120,9 @@ jobs:
         file: ${{ inputs.build-dockerfile }}
         context: ${{ inputs.build-context }}
         build-args: ${{ inputs.build-args }}
+        platforms: ${{ inputs.build-platforms }}
         tags: ${{ steps.metadata.outputs.tags }}
         labels: ${{ steps.metadata.outputs.labels }}
-        platforms: ${{ inputs.build-platforms }}
         cache-from: "type=gha,scope=${{ inputs.ci-registry-image }}-cache"
         cache-to: "type=gha,scope=${{ inputs.ci-registry-image }}-cache,mode=max"
 
