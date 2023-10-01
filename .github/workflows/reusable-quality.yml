@@ -18,6 +18,12 @@ jobs:
       uses: wagoid/commitlint-github-action@v5
       continue-on-error: true
 
+    - name: Dockerfile Lint
+      uses: hadolint/hadolint-action@v3.1.0
+      with:
+        config: .github/config/.hadolint.yml
+        dockerfile: Dockerfile
+
   test:
     runs-on: ubuntu-20.04
 
