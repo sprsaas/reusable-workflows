@@ -45,10 +45,6 @@ jobs:
           @commitlint/cli conventional-changelog-conventionalcommits
       if: github.event.inputs.git-ref == 'main'
 
-    - name: Release dry run
-      run: npx semantic-release --dry-run --no-ci
-      if: github.event.inputs.git-ref == 'main'
-
     - name: Release
       run: npx semantic-release --no-ci
       env:
