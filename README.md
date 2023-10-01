@@ -52,6 +52,7 @@ cut -d' ' -f1 .tool-versions | xargs -I{} sh -c 'asdf plugin add "$1"' -- {} && 
 ## ➤ Links <a name="-links"></a>
 
 - https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization
+- https://www.architect.io/blog/2023-01-12/github-actions-tutorial/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
