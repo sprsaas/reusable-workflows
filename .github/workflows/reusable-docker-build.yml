@@ -14,10 +14,6 @@ on:
         type: string
         required: false
         default: "Dockerfile"
-      build-args:
-        description: "Args passed to the build-process"
-        type: string
-        required: false
       build-labels:
         description: "Labels set to the build"
         type: string
@@ -58,6 +54,9 @@ on:
         required: false
         default: ""
     secrets:
+      build-args:
+        description: "Args passed to the build-process"
+        required: false
       CI_REGISTRY_USER:
         description: "Container Registry User"
         required: false
