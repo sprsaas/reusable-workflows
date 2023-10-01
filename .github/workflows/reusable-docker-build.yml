@@ -22,6 +22,7 @@ on:
         description: "Labels set to the build"
         type: string
         required: false
+        default: "MAINTAINER=${{ github.actor }},REPO=${{ github.repository }}"
       build-platforms:
         description: "The platforms to build the image for"
         type: string
