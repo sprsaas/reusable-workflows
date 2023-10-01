@@ -3,6 +3,12 @@ name: Quality
 
 on:
   workflow_call:
+    inputs:
+      continue-on-error:
+        description: "Enable continue-on-error option"
+        type: boolean
+        required: false
+        default: true
 
 jobs:
   lint:
@@ -16,10 +22,11 @@ jobs:
 
     - name: Commit Lint
       uses: wagoid/commitlint-github-action@v5
-      continue-on-error: true
+      continue-on-error: ${{ inputs.continue-on-error }}
 
     - name: Dockerfile Lint
       uses: hadolint/hadolint-action@v3.1.0
+      continue-on-error: ${{ inputs.continue-on-error }}
       with:
         config: .github/config/.hadolint.yml
         dockerfile: Dockerfile
@@ -36,6 +43,7 @@ jobs:
     - name: Run Gitleaks
       id: gitleaks
       uses: DariuszPorowski/github-action-gitleaks@v2
+      continue-on-error: ${{ inputs.continue-on-error }}
       with:
         verbose: true
 
