@@ -119,7 +119,7 @@ jobs:
         push: ${{ inputs.push }}
         file: ${{ inputs.build-dockerfile }}
         context: ${{ inputs.build-context }}
-        build-args: ${{ inputs.build-args }}
+        build-args: ${{ secrets.build-args }}
         platforms: ${{ inputs.build-platforms }}
         tags: ${{ steps.metadata.outputs.tags }}
         labels: ${{ steps.metadata.outputs.labels }}
