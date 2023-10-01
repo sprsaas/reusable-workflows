@@ -1,1 +1,32 @@
 ---
+name: Quality
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Commit Lint
+      uses: wagoid/commitlint-github-action@v5
+      continue-on-error: true
+
+    - name: Run Gitleaks
+      id: gitleaks
+      uses: DariuszPorowski/github-action-gitleaks@v2
+      with:
+        verbose: true
+
+    - name: Upload Gitleaks JSON report to artifacts
+      uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: gitleaks
+        path: ${{ steps.gitleaks.outputs.report }}
