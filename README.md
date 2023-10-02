@@ -53,6 +53,7 @@ cut -d' ' -f1 .tool-versions | xargs -I{} sh -c 'asdf plugin add "$1"' -- {} && 
 ## ➤ Templates <a name="#-templates"></a>
 
 - [Reusable docker build](./github/workflows/reusable-docker-build.yml)
+- [Reusable quality](./github/workflows/reusable-quality.yml)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
