@@ -32,7 +32,7 @@ jobs:
         config: .github/config/.hadolint.yml
         dockerfile: Dockerfile
 
-  test:
+  secret-detection:
     runs-on: ubuntu-20.04
 
     steps:
