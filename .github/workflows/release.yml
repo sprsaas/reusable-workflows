@@ -8,6 +8,11 @@ on:
     types:
     - completed
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   release:
     uses: sprsaas/reusable-workflows/.github/workflows/reusable-release.yml@main
