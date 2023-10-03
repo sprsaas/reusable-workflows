@@ -6,7 +6,12 @@ on:
     inputs:
       git-ref:
         description: Git branch reference
+        type: string
+        required: true
         default: main
+    secrets:
+      SEMANTIC_RELEASE_TOKEN:
+        description: GitHub token for semantic release
         required: true
 
 jobs:
