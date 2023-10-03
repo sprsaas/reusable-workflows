@@ -66,7 +66,7 @@ These are the variables we use in the templates:
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
   - [Reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
-  - [Key Concepts](.github/docs/KEY_CONCEPTS.md)
+  - [Key concepts](.github/docs/KEY_CONCEPTS.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
