@@ -1,9 +1,41 @@
-<mxfile host="app.diagrams.net" modified="2023-10-03T03:35:57.924Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" version="22.0.0" etag="G9q5RZkdJlz0qH3NrtOR" type="github">
-  <diagram name="Page-1" id="8WXLxLoPwzIzJMiwaIGN">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" modified="2023-10-03T03:41:13.380Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="vnYC0sdihglOg9IY_BMT" version="22.0.0" type="github">
+  <diagram name="Event-Flow" id="8WXLxLoPwzIzJMiwaIGN">
+    <mxGraphModel dx="1797" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6BS9dAJP644Y_eTXml6u-1" value="GitHub Actions - Workflow" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="440" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6BS9dAJP644Y_eTXml6u-1" source="6BS9dAJP644Y_eTXml6u-6" target="6BS9dAJP644Y_eTXml6u-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-6" value="GitHub Actions - Runner" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="6BS9dAJP644Y_eTXml6u-1">
+          <mxGeometry x="20" y="70" width="190" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-9" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;on:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;b&gt;event&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;job&lt;/b&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; step 1: &lt;b&gt;action&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; step 2: &lt;b&gt;action&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="6BS9dAJP644Y_eTXml6u-6">
+          <mxGeometry x="10" y="40" width="170" height="227.5" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-7" value="GitHub Actions - Runner" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="6BS9dAJP644Y_eTXml6u-1">
+          <mxGeometry x="240" y="70" width="180" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-10" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;on:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;b&gt;event&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;job&lt;/b&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; step 1: &lt;b&gt;action&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; step 2: &lt;b&gt;action&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="6BS9dAJP644Y_eTXml6u-7">
+          <mxGeometry x="10" y="40" width="170" height="227.5" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="6BS9dAJP644Y_eTXml6u-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-2" value="Some Event" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-3" value="Git Push" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="6BS9dAJP644Y_eTXml6u-2">
+          <mxGeometry x="30" y="40" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6BS9dAJP644Y_eTXml6u-4" value="Git Tag" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="6BS9dAJP644Y_eTXml6u-2">
+          <mxGeometry x="30" y="130" width="180" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
