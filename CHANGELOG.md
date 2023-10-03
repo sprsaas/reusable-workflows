@@ -1,5 +1,14 @@
 # Semantic Versioning Changelog
 
+## [1.1.1](https://github.com/sprsaas/reusable-workflows/compare/1.1.0...1.1.1) (2023-10-03)
+
+
+### :repeat: CI
+
+* fix change release ([13bf4f0](https://github.com/sprsaas/reusable-workflows/commit/13bf4f071fd8802a5e3086f48d8209bb9563b6ec))
+* fix conditional pr ([aa4cce8](https://github.com/sprsaas/reusable-workflows/commit/aa4cce80fff983f56da036b0b3c4a465120c50f7))
+* fix syntax environment ([3fe8cf6](https://github.com/sprsaas/reusable-workflows/commit/3fe8cf621791e32b0b804d681caeb67cceed04e8))
+
 ## [1.1.0](https://github.com/sprsaas/reusable-workflows/compare/1.0.0...1.1.0) (2023-10-03)
 
 
