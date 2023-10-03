@@ -32,15 +32,6 @@ jobs:
         config: .github/config/.hadolint.yml
         dockerfile: Dockerfile
 
-    - name: Pull-Request Lint
-      uses: seferov/pr-lint-action@master
-      if: github.event_name == 'pull_request'
-      with:
-        title-regex: "^feat|fix|refactor|chore|docs|ci|style|release|revert|regr|Bump|Update "
-        title-regex-flags: "g"
-        github-token: ${{ secrets.PR_LINT_TOKEN }}
-        auto-close-message: "Closing this pull request since the title does not match %pattern% pattern. Please fix the title and re-open the pull request."
-
   secret-detection:
     runs-on: ubuntu-20.04
 
