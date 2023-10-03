@@ -52,6 +52,8 @@ cut -d' ' -f1 .tool-versions | xargs -I{} sh -c 'asdf plugin add "$1"' -- {} && 
 
 ## ➤ Templates <a name="#-templates"></a>
 
+This is the list of templates we have implemented:
+
 - [Reusable docker build](./github/workflows/reusable-docker-build.yml)
 - [Reusable quality](./github/workflows/reusable-quality.yml)
 
