@@ -1,14 +1,8 @@
 ---
-name: Release
+name: Reusable-Release
 
 on:
-  workflow_dispatch:
-    inputs:
-      git-ref:
-        description: Git branch reference
-        type: string
-        required: true
-        default: main
+  workflow_call:
     secrets:
       SEMANTIC_RELEASE_TOKEN:
         description: GitHub token for semantic release
