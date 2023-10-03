@@ -36,5 +36,4 @@ A step is an independent task, command, or action called from within a job. It m
 ## Actions
 
 Actions are the building blocks of your workflow. You may use actions provided by GitHub, those contributed by the community, or your own custom actions. Actions may be defined within the same repository as the workflow that uses it, in another repository, or provided as a Docker image. An action serves as a reusable step that can be included in multiple jobs and can be used within multiple workflows. A single job may contain multiple actions such as “build my python code” and “run my unit tests.” Actions are called from steps, which are part of a job. Not every step runs an action, but every action is run from a step.
-
 <!-- END_DOCS -->
