@@ -26,6 +26,7 @@ jobs:
 
     - name: Dockerfile Lint
       uses: hadolint/hadolint-action@v3.1.0
+      if: ${{ hashFiles('Dockerfile') != '' }}
       continue-on-error: ${{ inputs.continue-on-error }}
       with:
         config: .github/config/.hadolint.yml
