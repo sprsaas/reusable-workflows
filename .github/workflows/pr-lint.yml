@@ -15,4 +15,4 @@ jobs:
         title-regex: "^feat|fix|refactor|chore|docs|ci|style|release|revert|regr|Bump|Update "
         title-regex-flags: "g"
         github-token: ${{ secrets.PR_LINT_TOKEN }}
-        auto-close-message: 'Closing this pull request since the title does not match %pattern% pattern. Please fix the title and re-open the pull request.'
+        auto-close-message: "Closing this pull request since the title does not match %pattern% pattern. Please fix the title and re-open the pull request."
