@@ -54,7 +54,6 @@ This is the list of templates we have implemented:
 
 These are the variables we use in the templates:
 
-- `COMPOSER_AUTH`
 - `PR_LINT_GITHUB_TOKEN`
 - `SCALEWAY_REGISTRY_USER`
 - `SCALEWAY_REGISTRY_PASSWORD`

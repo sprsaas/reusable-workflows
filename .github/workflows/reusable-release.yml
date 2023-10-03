@@ -17,6 +17,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-20.04
+    if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
       pages: write
@@ -28,13 +29,11 @@ jobs:
       with:
         fetch-depth: 0
         persist-credentials: false
-      if: github.event.inputs.git-ref == 'main'
 
     - name: Setup node
       uses: actions/setup-node@v3
       with:
         node-version: "lts/*"
-      if: github.event.inputs.git-ref == 'main'
 
     - name: Copy rules
       run: |
@@ -47,10 +46,8 @@ jobs:
           @semantic-release/exec @semantic-release/error @semantic-release/changelog \
           @semantic-release/commit-analyzer @semantic-release/release-notes-generator \
           @commitlint/cli conventional-changelog-conventionalcommits
-      if: github.event.inputs.git-ref == 'main'
 
     - name: Release
       run: npx semantic-release --no-ci
       env:
         GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
-      if: github.event.inputs.git-ref == 'main'
