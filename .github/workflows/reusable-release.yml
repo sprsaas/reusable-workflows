@@ -9,7 +9,7 @@ on:
         required: true
 
 jobs:
-  release:
+  semantic-release:
     runs-on: ubuntu-20.04
     environment:
       name: Production-Manual
