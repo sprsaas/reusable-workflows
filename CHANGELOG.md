@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+## [1.1.2](https://github.com/sprsaas/reusable-workflows/compare/1.1.1...1.1.2) (2023-10-03)
+
+
+### :repeat: CI
+
+* remove if branch main ([bec4311](https://github.com/sprsaas/reusable-workflows/commit/bec43117b56a60cd891bd878c7e132f7430a9c2c))
+* rename jb ([8c9ea46](https://github.com/sprsaas/reusable-workflows/commit/8c9ea46e0567920faa1a6f96a35fd6fdb05adb8d))
+
 ## [1.1.1](https://github.com/sprsaas/reusable-workflows/compare/1.1.0...1.1.1) (2023-10-03)
 
 
