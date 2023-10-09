@@ -5,52 +5,53 @@ on:
   workflow_call:
     inputs:
       build-context:
-        description: The build context path
         type: string
+        description: The build context path
         required: false
         default: "."
       build-dockerfile:
-        description: The build path to the Dockerfile, relative to the context
         type: string
+        description: The build path to the Dockerfile, relative to the context
         required: false
         default: "Dockerfile"
       build-labels:
-        description: Labels set to the build
         type: string
+        description: Labels set to the build
         required: false
         default: "MAINTAINER=${{ github.actor }},REPO=${{ github.repository }}"
       build-platforms:
-        description: The platforms to build the image for
         type: string
+        description: The platforms to build the image for
         required: false
         default: "linux/amd64"
       ci-registry:
-        description: The address of the Container Registry
         type: string
+        description: The address of the Container Registry
         required: true
         default: "rg.fr-par.scw.cloud"
       ci-registry-image:
-        description: The address of the project Container Registry
         type: string
+        description: The address of the project Container Registry
         required: true
+        default: ""
       push:
-        description: If images shoud be pushed
         type: boolean
+        description: If images shoud be pushed
         required: false
         default: true
       scan-image:
-        description: If image should be scaned for vulnerabilities
         type: boolean
+        description: If image should be scaned for vulnerabilities
         required: false
         default: true
       scan-image-severity:
-        description: Severities of vulnerabilities to scanned for and displayed. Supports UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL
         type: string
+        description: Severities of vulnerabilities to scanned for and displayed. Supports UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL
         required: false
         default: "HIGH,CRITICAL"
       scan-image-trivy-config:
-        description: Path to trivy-config
         type: string
+        description: Path to trivy-config
         required: false
         default: ""
     secrets:
