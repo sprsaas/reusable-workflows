@@ -60,10 +60,10 @@ on:
         required: false
       CI_REGISTRY_USER:
         description: Container registry user
-        required: false
+        required: true
       CI_REGISTRY_PASSWORD:
         description: Container registry PW/Token
-        required: false
+        required: true
     outputs:
       docker-digest:
         description: The Docker Image DIGEST sha
