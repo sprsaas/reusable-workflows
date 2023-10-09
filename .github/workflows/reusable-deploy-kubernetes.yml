@@ -22,11 +22,6 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-
     - name: Install Kubectl
       uses: azure/setup-kubectl@v3
       with:
