@@ -16,5 +16,5 @@ steps:
 - name: Lint actions and workflows
   uses: sprsaas/reusable-workflows/actions/action-lint@main
   with:
-    ref: "my-awesome-ref" # optional
+    ref: "git-ref" # optional
 ```
