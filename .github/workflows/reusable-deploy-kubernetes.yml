@@ -13,9 +13,9 @@ jobs:
     steps:
     - name: Setup environment
       uses: sprsaas/reusable-workflows/actions/helm-setup@main
-    with:
-      kubectl-version: "v1.23.0"
-      helm-version: "v3.10.1"
+      with:
+        kubectl-version: "v1.23.0"
+        helm-version: "v3.10.1"
 
     - name: Login in Kubernetes
       uses: azure/k8s-set-context@v3
