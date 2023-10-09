@@ -1,6 +1,6 @@
 ---
 name: Setup Helm
-description: Setup Helm
+description: Setup everything necessary to deploy or destroy Helm charts
 
 inputs:
   kubectl-version:
