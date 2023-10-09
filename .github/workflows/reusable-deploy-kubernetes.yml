@@ -1,17 +1,6 @@
 ---
 on:
   workflow_call:
-    inputs:
-      kubectl-version:
-        description: "Kubectl version"
-        type: string
-        required: false
-        default: "v1.23.0"
-      helm-version:
-        description: "Helm version"
-        type: string
-        required: false
-        default: "v3.10.1"
     secrets:
       KUBE_CONFIG:
         description: Kubeconfig file provided as input to the action
@@ -22,15 +11,11 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Install Kubectl
-      uses: azure/setup-kubectl@v3
-      with:
-        version: ${{ inputs.kubectl-version }}
-
-    - name: Install Helm
-      uses: azure/setup-helm@v3
-      with:
-        version: ${{ inputs.helm-version }}
+    - name: Setup environment
+      uses: sprsaas/reusable-workflows/actions/helm-setup@main
+    with:
+      kubectl-version: "v1.23.0"
+      helm-version: "v3.10.1"
 
     - name: Login in Kubernetes
       uses: azure/k8s-set-context@v3
