@@ -27,12 +27,12 @@ on:
       ci-registry:
         type: string
         description: The address of the Container Registry
-        required: true
+        required: false
         default: "rg.fr-par.scw.cloud"
       ci-registry-image:
         type: string
         description: The address of the project Container Registry
-        required: true
+        required: false
         default: ""
       push:
         type: boolean
